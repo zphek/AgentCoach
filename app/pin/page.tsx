@@ -1,12 +1,12 @@
 "use client";
 
 import { MobileContainer } from "@/components/layout/mobile-container";
-import { SplashScreen } from "@/features/splash/components/splash-screen";
+import { PinScreen } from "@/features/pin/components/pin-screen";
 
-export default function SplashPage() {
+export default function PinPage() {
   return (
     <MobileContainer variant="splash" className="bg-[#F8F8F6]">
-      <SplashScreen />
+      <PinScreen />
     </MobileContainer>
   );
 }
