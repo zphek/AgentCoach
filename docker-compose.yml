@@ -1,0 +1,14 @@
+services:
+  agent-coach:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - OPENAI_API_KEY=${OPENAI_API_KEY}
+        - AUTH_PIN=${AUTH_PIN}
+    ports:
+      - "3000:3000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - AUTH_PIN=${AUTH_PIN}
+    restart: unless-stopped
