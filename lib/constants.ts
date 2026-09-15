@@ -2,7 +2,7 @@ import type { Scenario, Personality, Difficulty, Accent, Duration } from "@/type
 
 export const APP_NAME = "AgentCoach";
 export const APP_TAGLINE = "Elevate your craft.";
-export const APP_FOOTER = "Made with ❤️ by Bernardo for Yonelys";
+export const APP_FOOTER = "Made with ❤️ by Bernardo";
 
 export const SCENARIOS: { value: Scenario; label: string }[] = [
   { value: "technical-support", label: "Technical Support" },

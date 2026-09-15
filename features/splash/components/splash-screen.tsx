@@ -25,7 +25,7 @@ export function SplashScreen() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push("/pin");
+      router.push("/home");
     }, 2500);
 
     return () => clearTimeout(timer);
@@ -109,7 +109,7 @@ export function SplashScreen() {
             size={14}
             className="mx-1 text-tertiary-fixed-dim fill-tertiary-fixed-dim"
           />{" "}
-          by Bernardo for Yonelys
+          by Bernardo
         </p>
       </motion.div>
 

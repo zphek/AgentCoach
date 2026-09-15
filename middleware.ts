@@ -16,14 +16,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Check for auth cookie
-  const authCookie = request.cookies.get(AUTH_COOKIE);
-
-  if (!authCookie || authCookie.value !== "authenticated") {
-    const pinUrl = new URL("/pin", request.url);
-    return NextResponse.redirect(pinUrl);
-  }
-
   return NextResponse.next();
 }
 

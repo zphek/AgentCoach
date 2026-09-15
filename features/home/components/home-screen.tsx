@@ -7,7 +7,7 @@ import { RandomCallButton } from "./random-call-button";
 import { RecentSession } from "./recent-session";
 import { QuickStats } from "./quick-stats";
 
-const USER_NAME = "Yonelys";
+const USER_NAME = "User";
 
 export function HomeScreen() {
   const [showName, setShowName] = useState(true);
